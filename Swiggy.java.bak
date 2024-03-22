@@ -1,0 +1,1756 @@
+import java.util.Scanner;
+class Swiggy 
+{
+	static Scanner sc= new Scanner(System.in);
+	public static int Gen_otp(){
+		int otp=(int)(Math.random()*999999+999999);
+		return(otp);
+	}
+	public static void SwiggyMyApp()throws Exception{
+		System.out.println("\t\t\tSelect The Hotel");
+		System.out.println("1.Buhari\n2.Eats-of-Arab\n3.SS Hyderabad Biryani\n4.KFC\n5.A2B");
+		int Selected_hotel=sc.nextInt();// 1 or 2 or 3 or 4 or 5 or abn
+
+		switch(Selected_hotel)
+		{
+			case 1:{//Buhari
+			System.out.println("\t\t\tWelcome To Buhari");
+			System.out.println("Select Your Favourite Food");
+			System.out.println("1.Mutton Biriyani\n2.Chiken Biriyani\n3.Chiken-65\n4.Ghee Rice");
+			int Selected_food=sc.nextInt();// 1 or 2 or 3 or 4 or abn
+
+			switch(Selected_food){
+                   case 1:{//Mutton Biryani
+				        double Per_Plate=480;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tMutton Biriyani :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+
+						    case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				    break;}
+				   case 2:{//Chiken Biryani   
+					   double Per_Plate=380;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tChiken Biriyani :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+
+			          break;}
+
+				   case 3:{//Chiken-65
+					   double Per_Plate=280;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tChiken-65 :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				      break;}
+					  
+				   case 4:{//Ghee Rice
+					   double Per_Plate=250;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tGhee Rice:"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				       break;}
+				default:{
+				System.out.println("Invalid-input");
+				break;}
+			}
+		break;}
+		    case 2:{//.Eats-of-Arab
+				System.out.println("\t\t\tWelcome To Eats-of-Arab");
+				System.out.println("\t\t\t***********************");
+			System.out.println("Select Your Favourite Food");
+			System.out.println("1.shawarma\n2.baklava\n3.kunafa\n4.fried chiken");
+			int Selected_food=sc.nextInt();// 1 or 2 or 3 or 4 or abn
+
+			switch(Selected_food){
+                   case 1:{//shawarma
+				        double Per_Plate=200;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tshawarma :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+
+						    case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				    break;}
+				   case 2:{//baklava  
+					   double Per_Plate=350;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tbaklava :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+
+			          break;}
+
+				   case 3:{//kunafa
+					   double Per_Plate=320;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tkunafa :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				      break;}
+					  
+				   case 4:{//fried chiken
+					   double Per_Plate=300;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tfried chiken:"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				       break;}
+				default:{
+				System.out.println("Invalid-input");
+				break;}
+			}
+					break;}
+
+				
+			case 3:{//SS Hyderabad Biryani
+				System.out.println("\t\t\tWelcome To SS Hyderabad Biryani");
+				System.out.println("\t\t\t***********************");
+			System.out.println("Select Your Favourite Food");
+			System.out.println("1.Mutton Biryani\n2.Chiken Biryani\n3.prawn-65\n4.chiken Fried Rice");
+			int Selected_food=sc.nextInt();// 1 or 2 or 3 or 4 or abn
+
+			switch(Selected_food){
+                   case 1:{//Mutton Biryani
+				        double Per_Plate=380;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tMutton Biryani :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+
+						    case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				    break;}
+				   case 2:{//Chiken Biryani  
+					   double Per_Plate=240;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tChiken Biryani :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+
+			          break;}
+
+				   case 3:{//prawn-65
+					   double Per_Plate=280;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tprawn-65:"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				      break;}
+					  
+				   case 4:{//chiken Fried Rice
+					   double Per_Plate=270;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tchiken Fried Rice:"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				       break;}
+				default:{
+				System.out.println("Invalid-input");
+				break;}
+			}
+				break;}
+			case 4:{//KFC
+				System.out.println("\t\t\tWelcome To KFC");
+				System.out.println("\t\t\t***********************");
+			System.out.println("Select Your Favourite Food");
+			System.out.println("1.KFC Fried Chiken\n2.Chiken Burger\n3.Chiken Longer\n4.chiken Popcorn");
+			int Selected_food=sc.nextInt();// 1 or 2 or 3 or 4 or abn
+
+			switch(Selected_food){
+                   case 1:{//KFC Fried Chiken
+				        double Per_Plate=550;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tKFC Fried Chiken :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+
+						    case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				    break;}
+				   case 2:{//Chiken Burger
+					   double Per_Plate=199;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tChiken Burger :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+
+			          break;}
+
+				   case 3:{//3.Chiken Longer
+					   double Per_Plate=99;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tChiken Longer:"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				      break;}
+					  
+				   case 4:{//chiken Popcorn 
+					   double Per_Plate=189;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tchiken Popcorn :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				       break;}
+				default:{
+				System.out.println("Invalid-input");
+				break;}
+			}
+				
+				break;}
+			case 5:{//A2B
+				System.out.println("\t\t\tWelcome To A2B");
+			System.out.println("Select Your Favourite Food");
+			System.out.println("1.Sambar Rice\n2.Meals\n3.Chapathi\n4.Parotta");
+			int Selected_food=sc.nextInt();// 1 or 2 or 3 or 4 or abn
+
+			switch(Selected_food){
+                   case 1:{//Sambar Rice
+				        double Per_Plate=60;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tSambar Rice :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+
+						    case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				    break;}
+				   case 2:{//Meals   
+					   double Per_Plate=100;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tMeals :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+
+			          break;}
+
+				   case 3:{//Chapathi
+					   double Per_Plate=68;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tChapathi :"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				      break;}
+					  
+				   case 4:{//Parotta
+					   double Per_Plate=70;
+                        System.out.println("Enter The Quantity");
+                        int Quantity=sc.nextInt();
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+                        double Total_bill=Per_Plate*Quantity;
+						System.out.println("\t\t\tParotta:"+ Quantity);
+						System.out.println("\t\t\tPer Plate:"+Per_Plate);
+						System.out.println("\t\t\t**********************************************************");
+						System.out.println("\t\t\tTotal bill Amount:"+Total_bill);
+						System.out.println("Processing........");
+						Thread.sleep(3000);
+						System.out.println("Select Payment Mode");
+						System.out.println("1.Google pay\n2.Phone pay");
+						int Selected_Payment_Mode=sc.nextInt();
+                        switch(Selected_Payment_Mode) {
+							case 1:{//Gp
+                                   System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+							break;}
+							case 2: {//pp
+								System.out.println("Enter The Bill Amount"+Total_bill);
+                                   double user_entered_Bill_amount=sc.nextInt();
+								   if(user_entered_Bill_amount==Total_bill){
+									   //Gen Otp
+									   int sys_otp=Gen_otp();
+									   System.out.println("Enter The OTP");
+									     System.out.println("Please  wait");
+									   Thread.sleep(5000);
+									   System.out.println("Your OTP is:"+sys_otp);
+									   int user_entered_otp=sc.nextInt();
+									    if(user_entered_otp== sys_otp){
+
+											System.out.println("Your order is placed");
+											System.out.println("Food will be delivered next day");
+									    }
+										else{
+											System.out.println("Invalid-OTP");
+											System.out.println("Order Fail");
+											
+										}
+
+
+
+									
+								   }
+								   else{
+									System.out.println("\t\t\tInvalid Amount entered");
+									System.out.println("Order Fail");
+								   }
+                       break;}
+					   default:{
+				          System.out.println("Invalid-input");
+						   break;}
+					   }
+				       break;}
+				default:{
+				System.out.println("Invalid-input");
+				break;}
+			}
+				 
+
+			       break;}
+
+
+
+
+	}
+}
+public static void main(String [] args)throws Exception{
+
+	System.out.println("\t\t\t\tWelcome to Swiggy");
+          SwiggyMyApp();
+}
+		  }
